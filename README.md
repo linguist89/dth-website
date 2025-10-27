@@ -1,2 +1,2 @@
-# dth-website
-This is an example website for practicing using Github
+# Example website 
+This is an example website with two branches for practicing how to use Github

@@ -1,0 +1,75 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Funky Title */
+h1 {
+  font-size: 48px;
+  animation: bounce 2s infinite;
+  margin: 10px 0;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 18px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1s;
+  max-width: 600px;
+  line-height: 26px;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* ===========================
+   Keyframe Animations
+   =========================== */
+
+/* Color-changing gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Bouncy title movement */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0px); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+/* Smooth fade-in for text */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
